@@ -1,5 +1,3 @@
-#!/usr/bin/ruby
-
 class Profile
 
 	def initialize(homedirectory)
@@ -33,6 +31,7 @@ class Profile
 	end
 
 	private
+
 	def profile_exists(profile_filename)
 		return FileTest.file?(@profile_location + "/" + profile_filename)
 	end
