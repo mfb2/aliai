@@ -37,6 +37,3 @@ class Profile
 		return FileTest.file?(@profile_location + "/" + profile_filename)
 	end
 end
-
-
-

@@ -1,9 +1,6 @@
-#!/usr/bin/ruby
-#
-# proflie rspec test class
-#
 
-require "../../lib/profile/profile.rb"
+require 'rspec'
+require "../lib/profile/profile.rb"
 
 describe Profile do
 
@@ -30,7 +27,7 @@ describe Profile do
 		create_test_file(".kshrc")
 
 		profile = Profile.new(@destination)
-		
+
 		profile_types = profile.find_profiles
 		expect(profile_types.include?(:bash_profile)).to be true
 		expect(profile_types.include?(:bashrc)).to be true
